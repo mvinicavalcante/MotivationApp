@@ -17,6 +17,8 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         //Esconde a barra de navegação
         supportActionBar?.hide()
 
+        handleUserName()
+
         //eventos
         binding.buttonNewPhrase.setOnClickListener(this)
     }
@@ -25,6 +27,11 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         if(view.id == R.id.button_new_phrase) {
             var s = ""
         }
+    }
+
+    private fun handleUserName() {
+        val name = SecurityPreferences(this).getString("USER_NAME")
+        binding.textHello.text = "Olá, $name!"
     }
 
 }

@@ -5,4 +5,6 @@
     <string name="lets_begin">Vamos começar?</string>
     <string name="your_name">Qual o seu nome?</string>
     <string name="save">Salvar</string>
+
+    <string name="validation_mandatory_name">Por favor, informe seu nome</string>
 </resources>
