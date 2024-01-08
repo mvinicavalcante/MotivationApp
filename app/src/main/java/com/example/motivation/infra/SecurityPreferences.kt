@@ -1,4 +1,4 @@
-package com.example.motivation
+package com.example.motivation.infra
 
 import android.content.Context
 import android.content.SharedPreferences
@@ -13,4 +13,5 @@ class SecurityPreferences(context: Context) {
     fun getString(key: String): String {
         return security.getString(key, "") ?: ""
     }
+
 }
